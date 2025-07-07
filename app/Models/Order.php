@@ -15,13 +15,13 @@ class Order extends Model
         'user_id',
     ];
 
-    public function orderItems()
-    {
-        return $this->hasMany(OrderItem::class);
-    }
-
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function orderItems()
+    {
+        return $this->belongsToMany(Product::class, 'order_items');
     }
 }

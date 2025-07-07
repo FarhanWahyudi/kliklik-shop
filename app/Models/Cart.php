@@ -10,17 +10,16 @@ class Cart extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'product_id',
-        'user_id'
+        'user_id',
     ];
 
     public function products()
     {
-        return $this->belongsTo(Product::class);
+        return $this->belongsToMany(Product::class, 'cart_items');
     }
 
-    public function users()
+    public function user()
     {
-        return $this->hasOne(User::class);
+        return $this->belongsTo(User::class);
     }
 }

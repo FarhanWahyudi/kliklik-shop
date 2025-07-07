@@ -23,23 +23,23 @@ class Product extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function cart()
+    public function carts()
     {
-        return $this->hasOne(Cart::class);
+        return $this->belongsToMany(Cart::class, 'cart_items');
     }
 
-    public function wishlist()
+    public function wishlistUsers()
     {
-        return $this->hasOne(Wishlist::class);
+        return $this->belongsToMany(User::class, 'wishlists');
     }
 
     public function orderItem()
     {
-        return $this->hasOne(orderItem::class);
+        return $this->belongsToMany(Order::class, 'order_items');
     }
 
     public function review()
     {
-        return $this->hasOne(Review::class);
+        return $this->hasMany(Review::class);
     }
 }

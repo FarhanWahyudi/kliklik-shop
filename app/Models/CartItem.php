@@ -5,20 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Wishlist extends Model
+class CartItem extends Model
 {
     use SoftDeletes;
-
-    public $timestamps = false;
-
+    
     protected $fillable = [
+        'cart_id',
         'product_id',
-        'user_id',
+        'quantity',
     ];
 
-    public function user()
+    public function cart()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(Cart::class);
     }
 
     public function product()
