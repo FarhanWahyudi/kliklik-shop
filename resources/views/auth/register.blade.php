@@ -7,9 +7,12 @@
             </h4>
             <img src="{{ asset('assets/ilustration/image-login.png') }}" alt="">
         </div>
-        <form method="POST" action="{{ route('register') }}" class="px-5 py-8 sm:py-16 sm:px-16">
+        <form method="POST" action="{{ route('register') }}" class="px-5 py-8 sm:py-10 sm:px-16">
             <div class="flex flex-col items-center justify-center mb-12">
-                <h2 class="font-semibold text-xl lg:text-2xl">Kliklik Shop</h2>
+                <div class="flex flex-col items-center">
+                    <img src="{{ asset('assets/logo/kliklik-shop.png') }}" alt="kliklik-shop" class="w-16">
+                    <h2 class="font-semibold text-gray-700 text-xl -mt-3 lg:text-2xl">Kliklik<span class="text-blue-600 font-bold">Shop</span></h2>
+                </div>
                 <h1 class="font-semibold text-3xl lg:text-4xl">Sign Up</h1>
             </div>
 
