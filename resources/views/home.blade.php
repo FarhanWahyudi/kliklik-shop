@@ -18,7 +18,7 @@
     <body class="font-poppins">
 
         {{-- Navbar --}}
-        <nav class="flex justify-center py-5">
+        <nav class="flex justify-center py-5 border-b border-gray-200">
             <div class="w-[95%] flex flex-col justify-between items-center gap-2 md:gap-5 md:w-[85%] md:flex-row 2xl:gap-12 xl:w-[70%] 2xl:w-[65%]">
                 <div class="flex flex-col items-center gap-1 w-full md:gap-5 2xl:gap-10 md:flex-row">
                     <div class="flex flex-col items-center">
@@ -65,5 +65,32 @@
                 </div>
             </div>
         </nav>
+
+        {{-- Banner --}}
+        <section class="flex justify-center py-5 lg:py-10">
+            <div class="w-[95%] flex flex-col justify-between items-center gap-2 md:gap-5 md:w-[85%] md:flex-row 2xl:gap-12 xl:w-[70%] 2xl:w-[65%]">
+                <img src="https://p16-images-comn-sg.tokopedia-static.net/tos-alisg-i-zr7vqa5nfb-sg/img/NsjrJu/2020/9/25/b1d2ed1e-ef80-4d7a-869f-a0394f0629be.jpg~tplv-zr7vqa5nfb-image.image" alt="" class="w-full rounded-lg">
+            </div>
+        </section>
+
+        {{-- Category --}}
+        <section class="flex justify-center">
+            <div class="w-[95%] p-3 shadow-md rounded-2xl shadow-gray-200 md:w-[85%] sm:p-5 xl:w-[70%] 2xl:w-[65%]">
+                <div class="flex items-center gap-2 md:gap-5 scroll-hidden overflow-x-scroll">
+                    <div class="flex-shrink-0 flex border border-gray-300 py-1 px-3 rounded-xl items-center lg:gap-1 lg:px-5 lg:py-2 lg:rounded-2xl">
+                        <img src="{{ asset('assets/gummy-living-room.svg') }}" alt="" class="w-6 sm:w-7">
+                        <h3 class="font-medium text-gray-700 text-xs sm:text-sm lg:text-base">Furniture</h3>
+                    </div>
+                    <div class="flex-shrink-0 flex border border-gray-300 py-1 px-3 rounded-xl items-center lg:gap-1 lg:px-5 lg:py-2 lg:rounded-2xl">
+                        <img src="{{ asset('assets/gummy-living-room.svg') }}" alt="" class="w-6 sm:w-7">
+                        <h3 class="font-medium text-gray-700 text-xs sm:text-sm lg:text-base">Furniture</h3>
+                    </div>
+                    <div class="flex-shrink-0 flex border border-gray-300 py-1 px-3 rounded-xl items-center lg:gap-1 lg:px-5 lg:py-2 lg:rounded-2xl">
+                        <img src="{{ asset('assets/gummy-living-room.svg') }}" alt="" class="w-6 sm:w-7">
+                        <h3 class="font-medium text-gray-700 text-xs sm:text-sm lg:text-base">Furniture</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
