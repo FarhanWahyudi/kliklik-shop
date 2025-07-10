@@ -19,25 +19,28 @@
 
         {{-- Navbar --}}
         <nav class="fixed top-0 left-0 w-full bg-white flex justify-center py-3 border-b border-gray-200 md:py-5">
-            <div class="w-[95%] flex flex-col justify-between items-center gap-2 md:gap-5 md:w-[85%] md:flex-row 2xl:gap-12 xl:w-[70%] 2xl:w-[65%]">
-                <div class="flex flex-col items-center gap-1 w-full md:gap-5 2xl:gap-10 md:flex-row">
-                    <div class="hidden flex-col items-center md:flex">
-                        <img src="{{ asset('assets/logo/kliklik-shop.png') }}" alt="kliklik-shop" class="w-10 hidden md:block">
-                        <h2 class="font-semibold text-sm md:-mt-2">Kliklik<span class="text-blue-600 font-bold">Shop</span></h2>
+            <div class="w-[95%] flex justify-between items-center gap-2 md:gap-5 md:w-[85%] 2xl:gap-12 xl:w-[70%] 2xl:w-[65%]">
+                <div class="flex flex-row items-center gap-1 w-full md:gap-5 2xl:gap-10">
+                    <div class="flex flex-col items-center">
+                        <img src="{{ asset('assets/logo/kliklik-shop.png') }}" alt="kliklik-shop" class="w-10">
+                        <h2 class="hidden font-semibold text-sm -mt-2 md:block">Kliklik<span class="text-blue-600 font-bold">Shop</span></h2>
                     </div>
                     <div class="w-full">
-                        <form action="" class="relative">
+                        <form action="" class="relative flex items-center gap-2 sm:gap-0">
                             @csrf
-                            <input type="text" class="w-full text-xs rounded-2xl border border-white bg-gray-100 focus:bg-white py-2 pl-3 focus:border-gray-300 focus:ring-0 md:py-3 md:pl-4 md:text-base">
-                            <button type="submit" class="absolute right-5 font-medium top-1/2 -translate-y-1/2 cursor-pointer">
+                            <input type="text" class="w-full text-xs rounded-2xl border border-white bg-gray-100 focus:bg-white py-2 pl-3 focus:border-gray-300 focus:ring-0 md:py-3 md:pl-4 md:text-base" placeholder="Cari di Kliklik Shop">
+                            <button type="submit" class="hidden absolute right-5 font-medium top-1/2 -translate-y-1/2 cursor-pointer sm:block">
                                 <svg class="w-5 text-gray-400 md:w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                                 </svg>
                             </button>
+                            <button type="submit" class="font-medium cursor-pointer bg-blue-600 rounded-full p-2.5 sm:hidden">
+                                <svg class="w-3 text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                            </button>
                         </form> 
                     </div>
                 </div>
-                <div class="flex gap-3 text-xs lg:gap-6 lg:text-sm xl:text-base 2xl:gap-10">
+                <div class="hidden gap-3 text-xs sm:flex lg:gap-6 lg:text-sm xl:text-base 2xl:gap-10">
                     <a href="/" class="flex items-center gap-1 hover:text-gray-500 transition-all duration-300">
                         <svg class="w-4 xl:w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
@@ -67,7 +70,7 @@
         </nav>
 
         {{-- Banner --}}
-        <section class="flex justify-center mt-20 py-5 lg:py-10">
+        <section class="flex justify-center mt-14 py-5 md:mt-20 lg:py-10">
             <div class="w-[95%] flex flex-col justify-between items-center gap-2 md:gap-5 md:w-[85%] md:flex-row 2xl:gap-12 xl:w-[70%] 2xl:w-[65%]">
                 <img src="https://p16-images-comn-sg.tokopedia-static.net/tos-alisg-i-zr7vqa5nfb-sg/img/NsjrJu/2020/9/25/b1d2ed1e-ef80-4d7a-869f-a0394f0629be.jpg~tplv-zr7vqa5nfb-image.image" alt="" class="w-full rounded-lg">
             </div>
@@ -255,118 +258,84 @@
 
         {{-- Footer --}}
         <footer class="flex justify-center py-5 lg:py-10">
-            <div class="border-t border-gray-200 w-[95%] md:w-[85%] xl:w-[70%] 2xl:w-[65%]">
-                <div class="flex justify-between">
-                    <div class="footer-column footer-store-info col-12 mb-4 mb-lg-0">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="assets/images/logo.png" alt="SurfsideMedia" class="logo__image d-block" />
-                            </a>
+            <div class="w-[95%] md:w-[85%] xl:w-[70%] 2xl:w-[65%]">
+                <a href="#" class="flex items-center">
+                    <img src="{{ asset('assets/logo/kliklik-shop.png') }}" alt="kliklik-shop" class="w-10">
+                    <h2 class="font-semibold text-sm">Kliklik<span class="text-blue-600 font-bold">Shop</span></h2>
+                </a>
+                <hr class="my-3">
+                <div class="flex flex-col gap-5 justify-between sm:flex-row">
+                    <div class="flex flex-col gap-5">
+                        <div>
+                            <p class="text-gray-400 text-sm">Telepon</p>
+                            <p class="font-medium">+1 000-000-0000</p>
                         </div>
-                        <p class="footer-address">123 Beach Avenue, Surfside City, CA 00000</p>
-                        <p class="m-0"><strong class="fw-medium">contact@surfsidemedia.in</strong></p>
-                        <p><strong class="fw-medium">+1 000-000-0000</strong></p>
-
-                        <ul class="social-links list-unstyled d-flex flex-wrap mb-0">
+                        <ul class="flex items-center gap-2">
                             <li>
-                            <a href="#" class="footer__social-link d-block">
-                                <svg class="svg-icon svg-icon_facebook" width="9" height="15" viewBox="0 0 9 15"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <use href="#icon_facebook" />
-                                </svg>
-                            </a>
+                                <a href="#">
+                                    <svg class="w-5 text-gray-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                                </a>
                             </li>
                             <li>
-                            <a href="#" class="footer__social-link d-block">
-                                <svg class="svg-icon svg-icon_twitter" width="14" height="13" viewBox="0 0 14 13"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <use href="#icon_twitter" />
-                                </svg>
-                            </a>
+                                <a href="#">
+                                    <svg class="w-5 text-gray-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                                </a>
                             </li>
                             <li>
-                            <a href="#" class="footer__social-link d-block">
-                                <svg class="svg-icon svg-icon_instagram" width="14" height="13" viewBox="0 0 14 13"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <use href="#icon_instagram" />
-                                </svg>
-                            </a>
+                                <a href="#">
+                                    <svg class="w-5 text-gray-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                                </a>
                             </li>
                             <li>
-                            <a href="#" class="footer__social-link d-block">
-                                <svg class="svg-icon svg-icon_youtube" width="16" height="11" viewBox="0 0 16 11"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M15.0117 1.8584C14.8477 1.20215 14.3281 0.682617 13.6992 0.518555C12.5234 0.19043 7.875 0.19043 7.875 0.19043C7.875 0.19043 3.19922 0.19043 2.02344 0.518555C1.39453 0.682617 0.875 1.20215 0.710938 1.8584C0.382812 3.00684 0.382812 5.46777 0.382812 5.46777C0.382812 5.46777 0.382812 7.90137 0.710938 9.07715C0.875 9.7334 1.39453 10.2256 2.02344 10.3896C3.19922 10.6904 7.875 10.6904 7.875 10.6904C7.875 10.6904 12.5234 10.6904 13.6992 10.3896C14.3281 10.2256 14.8477 9.7334 15.0117 9.07715C15.3398 7.90137 15.3398 5.46777 15.3398 5.46777C15.3398 5.46777 15.3398 3.00684 15.0117 1.8584ZM6.34375 7.68262V3.25293L10.2266 5.46777L6.34375 7.68262Z" />
-                                </svg>
-                            </a>
-                            </li>
-                            <li>
-                            <a href="#" class="footer__social-link d-block">
-                                <svg class="svg-icon svg-icon_pinterest" width="14" height="15" viewBox="0 0 14 15"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <use href="#icon_pinterest" />
-                                </svg>
-                            </a>
+                                <a href="#">
+                                    <svg class="w-5 text-gray-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
+                                </a>
                             </li>
                         </ul>
                     </div>
-
-                    <div class="footer-column footer-menu mb-4 mb-lg-0">
-                        <h6 class="sub-menu__title text-uppercase">Company</h6>
-                        <ul class="sub-menu__list list-unstyled">
-                            <li class="sub-menu__item"><a href="about-2.html" class="menu-link menu-link_us-s">About Us</a></li>
-                            <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Careers</a></li>
-                            <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Affiliates</a></li>
-                            <li class="sub-menu__item"><a href="blog_list1.html" class="menu-link menu-link_us-s">Blog</a></li>
-                            <li class="sub-menu__item"><a href="contact-2.html" class="menu-link menu-link_us-s">Contact Us</a></li>
+                    <div class="flex flex-col">
+                        <h6 class="font-semibold mb-3">Company</h6>
+                        <ul class="flex flex-col gap-2 text-sm text-gray-500">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
-
-                    <div class="footer-column footer-menu mb-4 mb-lg-0">
-                        <h6 class="sub-menu__title text-uppercase">Shop</h6>
-                        <ul class="sub-menu__list list-unstyled">
-                            <li class="sub-menu__item"><a href="shop2.html" class="menu-link menu-link_us-s">New Arrivals</a></li>
-                            <li class="sub-menu__item"><a href="shop3.html" class="menu-link menu-link_us-s">Accessories</a></li>
-                            <li class="sub-menu__item"><a href="shop4.html" class="menu-link menu-link_us-s">Men</a></li>
-                            <li class="sub-menu__item"><a href="shop5.html" class="menu-link menu-link_us-s">Women</a></li>
-                            <li class="sub-menu__item"><a href="shop1.html" class="menu-link menu-link_us-s">Shop All</a></li>
+                    <div class="flex flex-col">
+                        <h6 class="font-semibold mb-3">Shop</h6>
+                        <ul class="flex flex-col gap-2 text-sm text-gray-500">
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Shop All</a></li>
                         </ul>
                     </div>
-
-                    <div class="footer-column footer-menu mb-4 mb-lg-0">
-                        <h6 class="sub-menu__title text-uppercase">Help</h6>
-                        <ul class="sub-menu__list list-unstyled">
-                            <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Customer Service</a></li>
-                            <li class="sub-menu__item"><a href="account_dashboard.html" class="menu-link menu-link_us-s">My Account</a>
-                            </li>
-                            <li class="sub-menu__item"><a href="store_location.html" class="menu-link menu-link_us-s">Find a Store</a>
-                            </li>
-                            <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Legal & Privacy</a></li>
-                            <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Gift Card</a></li>
+                    <div class="flex flex-col">
+                        <h6 class="font-semibold mb-3">Help</h6>
+                        <ul class="flex flex-col gap-2 text-sm text-gray-500">
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Find a Store</a></li>
+                            <li><a href="#">Legal & Privacy</a></li>
+                            <li><a href="#">Gift Card</a></li>
                         </ul>
                     </div>
-
-                    <div class="footer-column footer-menu mb-4 mb-lg-0">
-                        <h6 class="sub-menu__title text-uppercase">Categories</h6>
-                        <ul class="sub-menu__list list-unstyled">
-                            <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Shirts</a></li>
-                            <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Jeans</a></li>
-                            <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Shoes</a></li>
-                            <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Bags</a></li>
-                            <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Shop All</a></li>
+                    <div class="flex flex-col">
+                        <h6 class="font-semibold mb-3">Categories</h6>
+                        <ul class="flex flex-col gap-2 text-sm text-gray-500">
+                            <li><a href="#">Shirts</a></li>
+                            <li><a href="#">Jeans</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Bags</a></li>
+                            <li><a href="#">Shop All</a></li>
                         </ul>
                     </div>
                 </div>
-    
-                <div class="footer-bottom">
-                    <div class="container d-md-flex align-items-center">
-                        <span class="footer-copyright me-auto">©2024 Surfside Media</span>
-                        <div class="footer-settings d-md-flex align-items-center">
-                            <a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms-conditions.html">Terms &amp;
-                            Conditions</a>
-                        </div>
-                    </div>
+                <div class="text-gray-700 text-sm mt-10">
+                    <p>Kliklik Shop © 2025 | Mempermudah keperluan belanja</p>
                 </div>
             </div>
         </footer>
