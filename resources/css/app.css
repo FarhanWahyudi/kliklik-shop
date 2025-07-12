@@ -10,3 +10,15 @@
 .scroll-hidden::-webkit-scrollbar {
     display: none; /* Chrome, Safari */
 }
+
+/* menghilangkan spiner number Untuk Chrome, Safari, Edge, Opera */
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* menghilangkan spiner number untuk Firefox */
+.no-spinner {
+    -moz-appearance: textfield;
+}

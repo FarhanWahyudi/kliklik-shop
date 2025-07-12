@@ -128,7 +128,7 @@
             <div class="w-[95%] p-3 shadow-md rounded-2xl shadow-gray-200 md:w-[85%] sm:p-5 xl:w-[70%] 2xl:w-[65%]">
                 <h2 class="text-gray-600 mb-3 font-medium text-sm sm:text-xl sm:mb-5">Produk kami</h2>
                 <div class="grid grid-cols-2 gap-x-5 gap-y-10 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-                    <div class="flex flex-col justify-between gap-4">
+                    <a href="/detail-product" class="flex flex-col justify-between gap-4">
                         <img src="https://images.tokopedia.net/img/cache/200-square/aphluv/1997/1/1/e03929d12aa645ab9c831987a47bdf77~.jpeg.webp?ect=4g" alt="" class="rounded-md w-full">
                         <div class="flex flex-col gap-1">
                             <h2 class="line-clamp-2 text-sm lg:line-clamp-none lg:truncate">Atori CY3220 Kursi Lipat Portable Empuk Kursi Belajar Kursi Cafe Minimalis - FULL WHITE</h2>
@@ -142,7 +142,7 @@
                                 <span>60+ terjual</span>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <div class="flex flex-col justify-between gap-4">
                         <img src="https://images.tokopedia.net/img/cache/200-square/aphluv/1997/1/1/e03929d12aa645ab9c831987a47bdf77~.jpeg.webp?ect=4g" alt="" class="rounded-md w-full">
                         <div class="flex flex-col gap-1">
