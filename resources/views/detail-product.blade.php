@@ -18,7 +18,7 @@
     <body class="font-poppins">
 
         {{-- Navbar --}}
-        <nav class="fixed top-0 left-0 w-full bg-white flex justify-center py-3 border-b border-gray-200 md:py-5 z-10">
+        <nav class="fixed top-0 left-0 w-full bg-white flex justify-center py-3  border-b border-gray-200 md:py-5 z-10">
             <div class="w-[95%] flex justify-between items-center gap-2 md:gap-5 md:w-[85%] 2xl:gap-12 xl:w-[70%] 2xl:w-[65%]">
                 <div class="flex flex-row items-center gap-1 w-full md:gap-5 2xl:gap-10">
                     <div class="flex flex-col items-center">
@@ -69,6 +69,14 @@
             </div>
         </nav>
 
+        {{-- Sticky Footer Bar --}}
+        <nav class="fixed bottom-0 left-0 w-full flex justify-center p-2 bg-white sm:hidden">
+            <div class="flex gap-1 w-full text-sm">
+                <button class="w-full bg-blue-600 text-white py-2 rounded-md font-medium">+ Keranjang</button>
+                <button class="w-full border border-blue-600 text-blue-600 py-2 rounded-md font-medium">Beli Langsung</button>
+            </div>
+        </nav>
+
         {{-- Detail --}}
         <div class="flex justify-center mt-20 md:mt-28 lg:mt-32">
             <div class="w-[95%] md:w-[85%] xl:w-[70%] 2xl:w-[65%]">
@@ -79,7 +87,7 @@
                     <div class="col-span-full md:col-span-5 lg:col-span-4">
                         <div>
                             <h1 class="text-xl font-semibold">Atori CY3220 Kursi Lipat Portable Empuk Kursi Belajar Kursi Cafe Minimalis - FULL WHITE</h1>
-                            <div class="flex items-center gap-1 mt-1 text-xs sm:text-sm">
+                            <div class="flex items-center gap-1 mt-1 text-sm">
                                 <p class="text-gray-500"><span class="font-medium text-black">Terjual</span> 60+</p>
                                 <span>•</span>
                                 <div class="flex items-center gap-1">
