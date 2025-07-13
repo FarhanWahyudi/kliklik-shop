@@ -19,6 +19,10 @@ Route::get('/cart', function () {
     return view('cart');
 });
 
+Route::get('/transaction', function () {
+    return view('transaction');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
