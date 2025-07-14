@@ -27,6 +27,10 @@ Route::get('/search', function () {
     return view('search');
 });
 
+Route::get('/user-profile', function () {
+    return view('profile');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
