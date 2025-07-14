@@ -18,11 +18,11 @@
         <div class="w-[95%] md:w-[85%] xl:w-[70%] 2xl:w-[65%]">
             <div class="grid grid-cols-7 gap-5">
                 <div class="col-span-full px-3 pb-10 pt-3 rounded-2xl shadow-md shadow-gray-200 sm:px-5 sm:pt-5 lg:col-span-5">
-                    <h1 class="text-2xl font-semibold mb-5">Keranjang</h1>
+                    <h1 class="mb-5 font-semibold text-xl md:text-2xl">Keranjang</h1>
                     <form action="">
                         <div class="flex items-center gap-3">
                             <input type="checkbox" id="select-all" class="focus:ring-0 w-4 h-4 rounded-md md:w-5 md:h-5">
-                            <label for="select-all" class="font-medium">Pilih Semua <span class="text-gray-500 text-sm font-normal">(3)</span></label>
+                            <label for="select-all" class="font-medium text-sm md:text-base">Pilih Semua <span class="text-gray-500 text-xs font-normal md:text-sm">(3)</span></label>
                         </div>
                         <div>
                             <hr class="border-t border-gray-200 my-5">

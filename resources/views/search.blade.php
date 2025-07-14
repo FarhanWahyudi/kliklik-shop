@@ -4,10 +4,10 @@
 
     @include('partials.navbar-mobile')
 
-    {{-- Wishlist --}}
+    {{-- Search --}}
     <div class="flex justify-center items-start min-h-screen py-5 lg:py-10 mt-14 md:mt-20">
-        <div class="w-[95%] px-3 pb-10 pt-3 rounded-2xl shadow-md shadow-gray-200 md:w-[85%] sm:px-5 sm:pt-5 xl:w-[70%] 2xl:w-[65%]">
-            <h1 class="mb-5 font-semibold text-xl md:text-2xl">Semua Wishlist</h1>
+        <div class="w-[95%] h-auto px-3 pb-10 pt-3 rounded-2xl shadow-md shadow-gray-200 md:w-[85%] sm:px-5 sm:pt-5 xl:w-[70%] 2xl:w-[65%]">
+            <h6 class="mb-5 text-gray-700 text-sm md:text-base">Hasil pencarian untuk '<span class="text-blue-600 font-medium">chair</span>'</h6>
             <div class="grid grid-cols-2 gap-x-3 gap-y-5 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                 <a href="/detail-product" class="flex flex-col shadow-lg shadow-gray-100 border border-gray-200 rounded-lg">
                     <img src="https://images.tokopedia.net/img/cache/200-square/aphluv/1997/1/1/e03929d12aa645ab9c831987a47bdf77~.jpeg.webp?ect=4g" alt="" class="rounded-md w-full">
@@ -22,7 +22,6 @@
                             <span>•</span>
                             <span>60+ terjual</span>
                         </div>
-                        <button class="text-blue-600 text-sm border border-blue-600 py-1.5 rounded-lg font-medium mt-3">+ Keranjang</button>
                     </div>
                 </a>
                 <a href="/detail-product" class="flex flex-col shadow-lg shadow-gray-100 border border-gray-200 rounded-lg">
@@ -38,7 +37,6 @@
                             <span>•</span>
                             <span>60+ terjual</span>
                         </div>
-                        <button class="text-blue-600 text-sm border border-blue-600 py-1.5 rounded-lg font-medium mt-3">+ Keranjang</button>
                     </div>
                 </a>
                 <a href="/detail-product" class="flex flex-col shadow-lg shadow-gray-100 border border-gray-200 rounded-lg">
@@ -54,7 +52,6 @@
                             <span>•</span>
                             <span>60+ terjual</span>
                         </div>
-                        <button class="text-blue-600 text-sm border border-blue-600 py-1.5 rounded-lg font-medium mt-3">+ Keranjang</button>
                     </div>
                 </a>
                 <a href="/detail-product" class="flex flex-col shadow-lg shadow-gray-100 border border-gray-200 rounded-lg">
@@ -70,7 +67,6 @@
                             <span>•</span>
                             <span>60+ terjual</span>
                         </div>
-                        <button class="text-blue-600 text-sm border border-blue-600 py-1.5 rounded-lg font-medium mt-3">+ Keranjang</button>
                     </div>
                 </a>
                 <a href="/detail-product" class="flex flex-col shadow-lg shadow-gray-100 border border-gray-200 rounded-lg">
@@ -86,7 +82,6 @@
                             <span>•</span>
                             <span>60+ terjual</span>
                         </div>
-                        <button class="text-blue-600 text-sm border border-blue-600 py-1.5 rounded-lg font-medium mt-3">+ Keranjang</button>
                     </div>
                 </a>
                 <a href="/detail-product" class="flex flex-col shadow-lg shadow-gray-100 border border-gray-200 rounded-lg">
@@ -102,7 +97,6 @@
                             <span>•</span>
                             <span>60+ terjual</span>
                         </div>
-                        <button class="text-blue-600 text-sm border border-blue-600 py-1.5 rounded-lg font-medium mt-3">+ Keranjang</button>
                     </div>
                 </a>
                 <a href="/detail-product" class="flex flex-col shadow-lg shadow-gray-100 border border-gray-200 rounded-lg">
@@ -118,9 +112,9 @@
                             <span>•</span>
                             <span>60+ terjual</span>
                         </div>
-                        <button class="text-blue-600 text-sm border border-blue-600 py-1.5 rounded-lg font-medium mt-3">+ Keranjang</button>
                     </div>
                 </a>
+                
                 
             </div>
         </div>

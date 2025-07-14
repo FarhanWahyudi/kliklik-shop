@@ -8,7 +8,7 @@
     <div class="flex justify-center min-h-screen py-5 lg:py-10 mt-14 md:mt-20">
         <div class="w-[95%] md:w-[85%] xl:w-[70%] 2xl:w-[65%]">
             <div class="px-3 pb-10 pt-3 rounded-2xl shadow-md shadow-gray-200 sm:px-5 sm:pt-5">
-                <h1 class="text-2xl font-semibold mb-5">Daftar Transaksi</h1>
+                <h1 class="mb-5 font-semibold text-xl md:text-2xl">Daftar Transaksi</h1>
                 <div class="flex flex-col items-start gap-2 md:gap-3 md:flex-row md:items-center">
                     <h2 class="font-semibold text-sm">Status</h2>
                     <div class="flex items-center flex-wrap gap-x-1.5 gap-y-2 md:gap-x-3">
